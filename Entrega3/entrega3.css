@@ -1,0 +1,18 @@
+body{
+    padding: 0;
+    margin: 40px;
+}
+
+fieldset{
+    width: 300px;
+}
+
+x3d{
+    border:2px solid rgb(8, 5, 1); 
+    width:600px; 
+    height:500px;   
+}
+
+.Container{
+    border:2px solid rgb(8, 5, 1);
+}

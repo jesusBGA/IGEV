@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Entrega 3 - IGEV - Jesús Brezmes Gil-Albarellos</title>
+    <link rel="stylesheet" href="./entrega3.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+     <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+     <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link>
+	 <meta charset="UTF-8">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2666677/OrbitControls.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js'></script>
+
+    <!-- Aplicacion -->
+    <link rel="stylesheet" type="text/css" href="./entrega3.css"/>
+
+</head>
+<body>
+    <h1>Jesús Brezmes Gil-Albarellos - Interfaces Gráficas y Entornos Virtuales</h1> 
+    <h2>Apartado 2 - Jeep de 6 ruedas</h2>
+    <br>
+    <div id="Container">
+    </div>
+    <script  src="./entrega3.js"></script>
+    <br><br>
+	<h2>Apartado 3 - Molécula de metano (CH4)</h2>
+	 <br>
+    <table>
+        <tr>
+        <td rowspan="3">
+            <x3d> 
+                <scene> 
+                 <!-- Carbono -->
+                 <shape> 
+                    <appearance> 
+                      <material diffuseColor='1 0 0'></material> 
+                    </appearance> 
+                    <sphere></sphere> 
+                 </shape> 
+                 <!-- Hidrógeno Izquierda -->
+                 <transform translation='-2.4 0 0' scale='0.4 0.4 0.4'> 
+                   <shape> 
+                      <appearance> 
+                        <material diffuseColor='0 0 1'></material> 
+                      </appearance> 
+                      <sphere></sphere> 
+                   </shape> 
+                 </transform> 
+                 <!-- Hidrógeno Derecha -->
+                 <transform translation='2.4 0 0' scale='0.4 0.4 0.4'> 
+                   <shape> 
+                      <appearance> 
+                        <material diffuseColor='0 0 1'></material> 
+                      </appearance> 
+                      <sphere></sphere> 
+                   </shape> 
+                 </transform>
+                 <!-- Hidrógeno Arriba -->
+                 <transform translation='0 2.4 0' scale='0.4 0.4 0.4'> 
+                     <shape> 
+                        <appearance> 
+                          <material diffuseColor='0 0 1'></material> 
+                        </appearance> 
+                        <sphere></sphere> 
+                     </shape> 
+                   </transform>  
+                 <!-- Hidrógeno Abajo -->
+                 <transform translation='0 -2.4 0' scale='0.4 0.4 0.4'> 
+                     <shape> 
+                        <appearance> 
+                          <material diffuseColor='0 0 1'></material> 
+                        </appearance> 
+                        <sphere></sphere> 
+                     </shape> 
+                   </transform>
+                 <!-- Cilindro Abajo -->
+                 <transform translation='0 -1.5 0' scale='0.1 0.5 0.1'> 
+                     <shape> 
+                        <appearance> 
+                          <material diffuseColor='0 1 0'></material> 
+                        </appearance> 
+                        <cylinder></cylinder> 
+                     </shape> 
+                   </transform> 
+                   <!-- Cilindro Arriba -->
+                 <transform translation='0 1.5 0' scale='0.1 0.5 0.1'> 
+                     <shape> 
+                        <appearance> 
+                          <material diffuseColor='0 1 0'></material> 
+                        </appearance> 
+                        <cylinder></cylinder> 
+                     </shape> 
+                   </transform> 
+                   <!-- Cilindro Izquierda -->
+                 <transform translation='-1.5 0 0' scale='0.1 0.5 0.1' rotation='0 0 1 1.57'> 
+                     <shape> 
+                        <appearance> 
+                          <material diffuseColor='0 1 0'></material> 
+                        </appearance> 
+                        <cylinder></cylinder> 
+                     </shape> 
+                   </transform> 
+                   <!-- Cilindro Derecha -->
+                 <transform translation='1.5 0 0' scale='0.1 0.5 0.1' rotation='0 0 1 1.57'> 
+                     <shape> 
+                        <appearance> 
+                          <material diffuseColor='0 1 0'></material> 
+                        </appearance> 
+                        <cylinder></cylinder> 
+                     </shape> 
+                   </transform> 
+                </scene>
+             </x3d> 
+        </td>
+        <td id="leyenda">
+            <fieldset>
+                <legend>Leyenda</legend>
+                <label style="color: red"> Carbono &#128308;</label>
+                <br> 
+                <label style="color: blue"> Hidrógeno &#x1F535;</label>
+                <label>  (radio 2.5 veces menor que el hidrógeno)</label>
+                <br> <br> 
+                <label style="color: green"> Enlace </label>
+                <label>  (longitud igual al radio del carbono)</label> 
+            </fieldset> 
+        </td>
+        </tr>
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+    </table> 
+     
+</body>
+</html>
